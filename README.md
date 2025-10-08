@@ -63,7 +63,7 @@ Response:
   "probability_low": 0.85,
   "probability_high": 0.15,
   "confidence": 0.85
-}
+}```
 
 ### Uso Local
 pip install -r requirements.txt
