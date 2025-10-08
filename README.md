@@ -21,25 +21,27 @@ Información general de la API
 
 ### GET /health
 Health check del servicio
+```json
 curl https://sarahy28leiv.pythonanywhere.com/health
 {
   "status": "healthy",
   "model_loaded": true,
   "scaler_loaded": true
-}
+} 
+```
 
 ### GET /example
 Ejemplo de datos de entrada
-
+```json
 curl https://sarahy28leiv.pythonanywhere.com/example
 
 { 
     "example_input":{"alcohol":9.4,"chlorides":0.076,"citric_acid":0.0,"density":0.9978,"fixed_acidity":7.4,"free_sulfur_dioxide":11.0,"pH":3.51,"residual_sugar":1.9,"sulphates":0.56,"total_sulfur_dioxide":34.0,"volatile_acidity":0.7},"expected_output":{"probability_high":0.15,"probability_low":0.85,"quality":"low"}
 }
-
+```
 ### POST /predict
 Realiza una predicción
-
+```json
 **Request:**
 
 {
@@ -64,7 +66,7 @@ Response:
   "probability_high": 0.15,
   "confidence": 0.85
 }
-
+```
 ### Uso Local
 pip install -r requirements.txt
 python app.py
