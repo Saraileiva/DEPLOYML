@@ -41,7 +41,7 @@ curl https://sarahy28leiv.pythonanywhere.com/example
 Realiza una predicción
 
 **Request:**
-```json
+
 {
   "fixed_acidity": 7.4,
   "volatile_acidity": 0.7,
@@ -63,7 +63,7 @@ Response:
   "probability_low": 0.85,
   "probability_high": 0.15,
   "confidence": 0.85
-}```
+}
 
 ### Uso Local
 pip install -r requirements.txt
