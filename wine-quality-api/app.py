@@ -5,9 +5,11 @@ import numpy as np
 # Inicializar Flask
 app = Flask(__name__)
 
+BASE_PATH = '/home/sarahy28leiv/DEPLOYML/wine-quality-api' 
+
 # Cargar modelo y scaler
-model = joblib.load('model.pkl')
-scaler = joblib.load('scaler.pkl')
+model = joblib.load(f'{BASE_PATH}/model.pkl')
+scaler = joblib.load(f'{BASE_PATH}/scaler.pkl')
 
 # Nombres de las características
 FEATURE_NAMES = [
